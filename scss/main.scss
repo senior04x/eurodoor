@@ -1,0 +1,313 @@
+/* Modalning stilini yaratamiz */
+.modal {
+    display: none; /* Dastlab modal yashirin bo‘ladi */
+    position: fixed;
+    z-index: 1; /* Modal boshqa elementlardan oldin chiqishi uchun */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ekranning to‘liq kengligi */
+    height: 100%; /* Ekranning to‘liq balandligi */
+    background-color: rgba(0, 0, 0, 0.5); /* Orqa fonni dim qilish */
+    transition: opacity 0.5s ease; /* Sekin ochilish uchun */
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  
+  /* Modal ichidagi kontent */
+  .modal-content {
+    top: 0;
+    background-color: #fff;
+    margin: 5% auto; /* Markazlashtirish */
+    padding: 20px;
+    border: none;
+    width: 80%; /* Modalning kengligi */
+    max-width: 500px; /* Maksimal kenglik */
+    background-color: transparent;
+    background: #8463cb30; /* Qoraytirish (0.5 = 50%) */
+    backdrop-filter: blur(20px); /* Blur effekti */
+    transition: right 0.5s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease; /* Ichki kontentga kirish animatsiyasi */
+  }
+  
+  /* Yopish tugmasi */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset; /* Orqa fonni shaffof qilib o'rnatish */
+    -webkit-text-fill-color: #fff; /* Matn rangini qora qilish */
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+  }
+  .modal-content form input,
+  .modal-content form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #481F6E;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Standart box-shadow */
+  //   -moz-box-shadow: 10px 10px 5px #888;
+  // -webkit-box-shadow: 10px 10px 5px #888;
+  // box-shadow: 10px 10px 5px #888;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    outline: none;
+    position: relative; /* position qo'shish */
+    z-index: 1; /* Z-indexni qo'shish */
+  }
+  
+  .modal-content form input::placeholder,
+  .modal-content form textarea::placeholder {
+    color: #ffffff9c;
+    font-size: 18px;
+  }
+  
+  .modal-content form input:hover,
+  .modal-content form textarea:hover {
+    -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .modal-content form input:focus,
+  .modal-content form textarea:focus {
+    outline: none;
+    -webkit-box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15); /* Box-shadowni to'g'ri qo'shish */
+    transform: scale(1.03);
+  }
+  .modal-content form input,
+  .modal-content form textarea {
+    will-change: box-shadow, transform; /* Performansni yaxshilash */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+  
+  .modal-content form label {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  
+  .modal-content form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #854fb8ad;
+    backdrop-filter: blur(1px);
+    border: none;
+    &:hover{
+      background-color: #352545;
+    }
+  }
+  @media (max-width: 768px){
+    .modal-content form input::placeholder{
+      display: none;
+    }
+  }
+  .modal-img{
+    width: 40%;
+    border-radius: 10px;
+  }
+  .modal-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .product-title3{
+    color: #fff;
+  }
+  
+  /* Kontent kirish animatsiyasi */
+  @keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  .quantity-controls{
+    display: flex;
+  }
+  #quantity{
+    width: 32px;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.5s;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .btn-modal-order, .minus{
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.5s;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+  }
+  .img-responsive2{
+    width: 35%;
+    @media (max-width: 768px){
+      margin-bottom: 30px;
+      width: 100%;
+
+    }
+  }
+  .hero__box{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    @media (max-width: 768px){
+      display: block;
+      column-gap: 20px;
+      padding-bottom: 200px;
+    }
+  }
+  .fh5co-heading2, .mb-42, .product-price-new,.order-text{
+    text-align: end;
+  }
+  .order-text{
+    margin-top: 10px;
+  }
+.open-modalBtn , .open-modalBtn2{
+  margin: 0;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  background-color: #481F6E;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 20px;
+  height: 39.6px;
+}
+.open-modalBtn2{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+
+#basket-body{
+  width: 100%;
+}
+.basket__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.basket__list img{
+  max-width: 100px;
+  border-radius: 5%;
+}
+.basket__quantity_box{
+  display: flex;
+}
+.basket__quantity{
+  max-width: 50px;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  outline: none;
+}
+.basket__minus_btn{
+ border-right: none;
+ background-color: transparent;
+ border-radius: 15% 0 0 15%;
+}
+.basket__plus_btn{
+  border-left: none;
+  background-color: transparent;
+  border-radius: 0 15% 15% 0;
+  align-items: center;
+  
+  
+}
+.basket__remove_btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 25px;
+  color: #F8302D;
+}
+.basket__box{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 30%;
+  align-items: center;
+}
+.basket__list h2{
+ color: #000;
+ font-size: 28px;
+}
+.basket__list h3{
+  font-size: 20px;
+}
+@media (max-width: 768px){
+.basket__list h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.basket__box{
+  display: block;
+}
+.basket__list h3{
+  font-size: 15px;
+}
+.basket__list{
+  position: relative;
+}
+.basket__remove_btn{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.basket__quantity_box{
+  margin-bottom: 5px;
+}
+
+}
+
+
+
