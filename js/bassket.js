@@ -3,7 +3,43 @@
     const basket = JSON.parse(localStorage.getItem('basket')) || [];
     const basketBody = document.getElementById('basket-body2');
     const inputTitles = document.querySelectorAll("#product__input_title2");
+    
+  // Agar basket bo‘sh bo‘lsa, openModalBtn yashirin bo‘lsin
+const openModalBtn = document.getElementById("openModalBtn");
+if (openModalBtn) {
+  if (basket.length === 0) {
+    openModalBtn.style.display = "none";
+  } else {
+    openModalBtn.style.display = "block";
+  }
+}
+
+
+const basketEmptyBox = document.getElementById("basket-empty");
+
+if (basket.length === 0) {
+  // Savat bo‘sh bo‘lsa
+  basketEmptyBox.innerHTML = `
+    <p class="basket__empty_text">У вас нет товаров в корзине.  
+Нажмите «Больше товаров» и сделайте заказ.
+</p>
+  <a class="empty_btn" href="shop.html">Больше товаров</a>
   
+  `;
+
+  // Asl openModalBtn tugmasini yashiramiz
+  if (openModalBtn) openModalBtn.style.display = "none";
+
+} else {
+  // Savatda mahsulotlar bo‘lsa
+  basketEmptyBox.innerHTML = "";
+  if (openModalBtn) openModalBtn.style.display = "block";
+}
+
+
+
+
+
     basketBody.innerHTML = ''; // Oldingi ma'lumotlarni tozalash
   
     basket.forEach((product, index) => {
@@ -168,3 +204,4 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
+
