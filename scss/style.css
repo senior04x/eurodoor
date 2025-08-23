@@ -32,7 +32,7 @@ a.more {
 }
 
 .custom-navbar {
-  background: #42286F !important;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%) !important;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -108,7 +108,7 @@ a.more {
 }
 
 .hero {
-  background: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   padding: calc(4rem - 30px) 0 0rem 0;
   height: 100vh;
 }
@@ -153,7 +153,7 @@ a.more {
 }
 .hero p {
   color: rgba(255, 255, 255, 0.5);
-  margin-botom: 30px;
+  margin-bottom: 30px;
 }
 .hero .hero-img-wrap {
   position: relative;
@@ -234,13 +234,13 @@ a.more {
   border-color: #62469E;
 }
 .btn.btn-primary:hover {
-  background: rgb(54.8543046358, 33.2450331126, 92.2549668874);
-  border-color: rgb(54.8543046358, 33.2450331126, 92.2549668874);
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%), 5%;
+  border-color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%), 5%;
 }
 .btn.btn-secondary {
   padding: 12px 45px;
-  color: #42286F;
-  background: #DF271E;
+  color: linear-gradient(90deg, rgb(98, 70, 158) 0%, rgb(227, 44, 39) 100%);
+  background: #E32C27;
   border-color: #DF271E;
 }
 .btn.btn-secondary:hover {
@@ -265,8 +265,8 @@ a.more {
 
 .btn-3hero {
   color: white;
-  background: #42286F;
-  border-color: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
+  border-color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
 }
 .btn-3hero:hover {
   background: #BAACFC;
@@ -396,7 +396,7 @@ a.more {
   width: 33px;
   height: 33px;
   position: absolute;
-  background: rgba(66, 40, 111, 0.2);
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%), 0.2;
   border-radius: 50%;
   right: -8px;
   bottom: 0;
@@ -468,7 +468,7 @@ a.more {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #42286F;
+  border: 2px solid linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   position: absolute;
   left: 0;
   top: 8px;
@@ -564,12 +564,12 @@ a.more {
   height: 58px;
   line-height: 58px;
   border-radius: 50%;
-  background: rgba(66, 40, 111, 0.1);
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%), 0.1;
   color: #2f2f2f;
   transition: 0.3s all ease;
 }
 .testimonial-slider-wrap #testimonial-nav > span:hover {
-  background: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   color: white;
 }
 .testimonial-slider-wrap #testimonial-nav .prev {
@@ -611,7 +611,7 @@ a.more {
   background-color: rgb(213.5, 213.5, 213.5);
 }
 .testimonial-slider-wrap .tns-nav button:hover:before, .testimonial-slider-wrap .tns-nav button.tns-nav-active:before {
-  background-color: #42286F;
+  background-color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
 }
 
 .before-footer-section {
@@ -692,7 +692,7 @@ a.more {
 .footer-section .subscription-form .form-control:active, .footer-section .subscription-form .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #42286F;
+  border-color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .footer-section .subscription-form .form-control::-webkit-input-placeholder {
@@ -746,11 +746,11 @@ a.more {
   line-height: 40px;
   display: inline-block;
   background: #dce5e4;
-  color: #42286F;
+  color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   border-radius: 50%;
 }
 .footer-section .custom-social li a:hover {
-  background: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   color: #DF271E;
 }
 .footer-section .border-top {
@@ -772,7 +772,7 @@ a.more {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #42286F;
+  border-color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .form-control::-webkit-input-placeholder {
@@ -797,7 +797,7 @@ a.more {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   margin-right: 20px;
   color: white;
 }
@@ -830,7 +830,7 @@ textarea {
   color: rgba(0, 0, 0, 0.8);
 }
 .site-blocks-table tbody tr:first-child td {
-  border-top: 1px solid #42286F !important;
+  border-top: 1px solid linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%) !important;
 }
 .site-blocks-table .btn {
   background: none !important;
@@ -851,13 +851,14 @@ textarea {
 .couponcode-wrap input {
   border-radius: 10px !important;
 }
+
 .text-primary {
-  color: #42286F !important;
+  color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%) !important;
 }
 
 .thankyou-icon {
   position: relative;
-  color: #42286F;
+  color: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
 }
 .thankyou-icon:before {
   position: absolute;
@@ -865,7 +866,7 @@ textarea {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(66, 40, 111, 0.2);
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%), 0.2;
 }
 
 .basket__empty_text {
@@ -886,7 +887,7 @@ textarea {
   width: -moz-fit-content;
   width: fit-content;
   padding: 12px 50px;
-  background: #42286F;
+  background: linear-gradient(90deg, rgba(98,70,158,1) 50%, rgba(227,44,39,1) 100%);
   color: white;
   border-radius: 8px;
   text-decoration: none;
